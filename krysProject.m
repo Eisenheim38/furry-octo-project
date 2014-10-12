@@ -3,8 +3,8 @@
 % Entrada: Matriz de adyacencia A
 %
 % Proceso:
-%   Nota: Evaluar si el grafo que representa la matriz A posee más de una
-%       componente conexa (si es así algo debe cambiar...
+%   Nota: Evaluar si el grafo que representa la matriz A posee más de
+%       una componente conexa (si es así algo debe cambiar...
 %       ¿aplicar el algoritmo para cada componente?).
 %   Paso 1: Obtener matriz con promedio ponderado.
 %       Lo explica la presentación...
@@ -41,3 +41,10 @@ for i=1:1:n
     end
 end
 A
+
+%--------------------------------------------------------------------
+
+S = 1/n * ones(n);
+
+
+
