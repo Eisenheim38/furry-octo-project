@@ -13,3 +13,6 @@
 %       Usar método de iterativo de las potencias.
 %
 % Salida: Vector de nodos ordenados por importancia
+
+% Caso de prueba (presentación)
+A = [0 0 1 1; 1 0 0 0; 1 1 0 1; 1 1 0 0]
