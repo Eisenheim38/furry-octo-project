@@ -20,24 +20,11 @@ v = size(A);
 n = v(1);
 
 x = [0 0 0 0]';
-% Calculando vector x_k = # de links que referencian a la pag k
+% Calculando vector xk = # de links que referencian a la pag k
 for i=1:1:n
     for j=1:1:n
         x(i) = x(i) + A(i,j);
     end
 end
-% Calculando vector y_k = # de links que referencia la pag k
-y = [0 0 0 0]';
-for i=1:1:n
-    for j=1:1:n
-        y(i) = y(i) + A(j,i);
-    end
-end
-y
-% Sacando la matriz estocástica de A
-for i=1:1:n
-    for j=1:1:n
-        A(i,j) = A(i,j)/y(j);
-    end
-end
-A
+x
+% Sacando la matriz esotcástica de A
