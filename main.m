@@ -3,11 +3,10 @@
 % Entrada: Matriz de adyacencia A
 %
 % Proceso:
-%   Nota: Evaluar si el grafo que representa la matriz A posee más de una
-%        una componente conexa (si es así algo debe cambiar...
-%       ¿aplicar el algoritmo para cada componente?).
+%   Nota: Evaluar si el grafo que representa la matriz A posee más de
+%        una componente conexa, si es así entonces M = A.
 %   Paso 1: Obtener matriz con promedio ponderado
-%       Lo explica la presentaciÃ³n...
+%       Lo explica la presentación...
 %       M = obtenerEstocastica(A);
 %   Paso 2: Obtener el autovector asociado con el mayor autovalor
 %       Usar método de iterativo de las potencias.
@@ -16,12 +15,15 @@
 % Salida: Vector de nodos ordenados por importancia
 
 % Caso de prueba con una sola componente conexa (presentación)
-A1 = [0 0 1 1; 1 0 0 0; 1 1 0 1; 1 1 0 0]
+A1 = [0 0 1 1; 1 0 0 0; 1 1 0 1; 1 1 0 0];
 
-% Caso de prueba con dos componente conexas (presentaciÃ³n)
+% Caso de prueba con dos componente conexas (presentación)
 A2 = [0 1 0 0 0; 1 0 0 0 0; 0 0 0 1 1; 0 0 1 0 1; 0 0 0 0 0]
 
-M = obtenerEstocastica(A1);
-M = obtenerEstocastica(A2);
-%x= metodoDePotencias(A)
-%sort(x,'descend')
+%M = obtenerEstocastica(A1);
+A = obtenerEstocastica(A2);
+M = obtenerM(A);
+x = metodoDePotencias(M)
+%[B,I] = sort(x,'descend');
+%disp('El orden de las páginas según su importancia es el siguiente:')
+%I'
