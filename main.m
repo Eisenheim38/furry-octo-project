@@ -1,4 +1,4 @@
-% pseudo-solución, copia con modificacion de "krysProject.m"
+% Pseudo-solución
 %
 % Entrada: Matriz de adyacencia A
 %
@@ -6,11 +6,10 @@
 %   Nota: Evaluar si el grafo que representa la matriz A posee más de
 %        una componente conexa, si es así entonces M = A.
 %   Paso 1: Obtener matriz con promedio ponderado
-%       Lo explica la presentación...
-%       M = obtenerEstocastica(A);
+%       A_est = obtenerEstocastica(Ai);
 %   Paso 2: Obtener el autovector asociado con el mayor autovalor
 %       Usar método de iterativo de las potencias.
-%	x = metodoDePotencias(M);
+%       x = metodoDePotencias(M);
 %
 % Salida: Vector de nodos ordenados por importancia
 
@@ -24,6 +23,6 @@ A2 = [0 1 0 0 0; 1 0 0 0 0; 0 0 0 1 1; 0 0 1 0 1; 0 0 0 0 0]
 A = obtenerEstocastica(A2);
 M = obtenerM(A);
 x = metodoDePotencias(M)
-%[B,I] = sort(x,'descend');
-%disp('El orden de las páginas según su importancia es el siguiente:')
-%I'
+[B,I] = sort(x,'descend');
+disp('El orden de las páginas según su importancia es el siguiente:')
+I'

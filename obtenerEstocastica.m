@@ -16,4 +16,5 @@ function A_est = obtenerEstocastica(A)
             A_est(i,j) = A(i,j)/y(j);
         end
     end
+    A_est
 end

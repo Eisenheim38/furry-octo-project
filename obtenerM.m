@@ -1,5 +1,4 @@
-% obtener matriz con el promedio ponderado (con la propiedad 
-% de que es una matriz estocastica)
+% Descripción pendiente...
 function M = obtenerM(A)
 	v = size(A);
     n = v(1);
