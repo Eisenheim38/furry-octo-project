@@ -4,11 +4,7 @@ function A_est = obtenerEstocastica(A)
     v = size(A);
     n = v(1);
     % Calculando vector y_k = # de links que referencia la pag k
-<<<<<<< HEAD
     y = zeros(n,1);
-=======
-    y = zeros(n)(:,1);
->>>>>>> origin/master
     for i=1:1:n
         for j=1:1:n
             y(i) = y(i) + A(j,i);
