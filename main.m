@@ -17,10 +17,13 @@
 A1 = [0 0 1 1; 1 0 0 0; 1 1 0 1; 1 1 0 0];
 
 % Caso de prueba con dos componente conexas (presentación)
-A2 = [0 1 0 0 0; 1 0 0 0 0; 0 0 0 1 1; 0 0 1 0 1; 0 0 0 0 0]
+A2 = [0 1 0 0 0; 1 0 0 0 0; 0 0 0 1 1; 0 0 1 0 1; 0 0 0 0 0];
+
+% A continuación copie su matriz de prueba
+A3 = [0 1 1 0 0 ; 0 0 0 0 0; 0 0 0 1 0; 0 0 0 0 0; 0 0 0 0 0];
 
 %M = obtenerEstocastica(A1);
-A = obtenerEstocastica(A2);
+A = obtenerEstocastica(A3);
 M = obtenerM(A);
 x = metodoDePotencias(M)
 [B,I] = sort(x,'descend');
