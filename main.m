@@ -16,16 +16,8 @@
 % Caso de prueba con una sola componente conexa (presentacion)
 A1 = [0 0 1 1; 1 0 0 0; 1 1 0 1; 1 1 0 0];
 
-<<<<<<< HEAD
 % Caso de prueba con dos componente conexas (presentación)
 A2 = [0 1 0 0 0; 1 0 0 0 0; 0 0 0 1 1; 0 0 1 0 1; 0 0 0 0 0];
-
-% A continuación copie su matriz de prueba
-A3 = [0 1 1 0 0 ; 0 0 0 0 0; 0 0 0 1 0; 0 0 0 0 0; 0 0 0 0 0];
-=======
-% Caso de prueba con dos componente conexas (presentacion)
-A2 = [0 1 0 0 0; 1 0 0 0 0; 0 0 0 1 1; 0 0 1 0 1; 0 0 0 0 0]
->>>>>>> origin/master
 
 % Otro caso de prueba
 A3 = [0 1 1 0 0 ; 0 0 0 0 0; 0 0 0 1 0; 0 0 0 0 0; 0 0 0 0 0];
