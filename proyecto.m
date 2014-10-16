@@ -1,3 +1,4 @@
+function [B,I] = proyecto(A, max_iters, tol)
 % Pseudo-solucion
 %
 % Entrada: Matriz de adyacencia A
@@ -12,21 +13,11 @@
 %       x = metodoDePotencias(M);
 %
 % Salida: Vector de nodos ordenados por importancia
-
-% Caso de prueba con una sola componente conexa (presentacion)
-A1 = [0 0 1 1; 1 0 0 0; 1 1 0 1; 1 1 0 0];
-
-% Caso de prueba con dos componente conexas (presentación)
-A2 = [0 1 0 0 0; 1 0 0 0 0; 0 0 0 1 1; 0 0 1 0 1; 0 0 0 0 0];
-
-% Otro caso de prueba
-A3 = [0 1 1 0 0 ; 0 0 0 0 0; 0 0 0 1 0; 0 0 0 0 0; 0 0 0 0 0];
-
-%M = obtenerEstocastica(A1);
-A = obtenerEstocastica(A3);
-M = obtenerM(A);
+A = [0 1 0 0 0; 1 0 0 0 0; 0 0 0 1 1; 0 0 1 0 1; 0 0 0 0 0];
+A_est = obtenerEstocastica(A);
+M = obtenerM(A_est);
 x = metodoDePotencias(M,size(M)(1))
 [B,I] = sort(x,'descend');
 disp('El orden de las paginas segun su importancia es el siguiente:')
 %podriamos agregarle que tanta importancia tiene
-I'
+I
