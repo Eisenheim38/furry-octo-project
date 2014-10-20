@@ -13,11 +13,9 @@ function [B,I] = proyecto(A, max_iters, tol)
 %       x = metodoDePotencias(M);
 %
 % Salida: Vector de nodos ordenados por importancia
-A = [0 1 0 0 0; 1 0 0 0 0; 0 0 0 1 1; 0 0 1 0 1; 0 0 0 0 0];
-A_est = obtenerEstocastica(A);
+v = size(A);
+n = v(1);
+A_est = obtenerEstocastica(A,n);
 M = obtenerM(A_est);
-x = metodoDePotencias(M,size(M)(1))
+x = metodoDePotencias(M,n)
 [B,I] = sort(x,'descend');
-disp('El orden de las paginas segun su importancia es el siguiente:')
-%podriamos agregarle que tanta importancia tiene
-I

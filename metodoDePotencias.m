@@ -1,6 +1,3 @@
-% utilizar el metodo de la potencia
-% hints: none yet
-
 function x = metodoDePotencias(M,n)
 	x0=ones(n,1);
 	x0=(1/n)*x0;
