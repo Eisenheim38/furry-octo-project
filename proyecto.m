@@ -17,5 +17,5 @@ v = size(A);
 n = v(1);
 A_est = obtenerEstocastica(A,n);
 M = obtenerM(A_est);
-x = metodoDePotencias(M,n)
+x = metodoDePotencias(M,n,max_iters,tol);
 [B,I] = sort(x,'descend');

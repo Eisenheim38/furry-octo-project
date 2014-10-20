@@ -16,5 +16,5 @@ function A_est = obtenerEstocastica(A,n)
 			end
         end
     end
-    A_est
+    %A_est
 end
