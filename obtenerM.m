@@ -1,4 +1,3 @@
-% Descripción pendiente...
 function M = obtenerM(A)
 	v = size(A);
     n = v(1);
